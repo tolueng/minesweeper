@@ -2,7 +2,7 @@
 This is a web game repo written in HTML, CSS and JS.<br /><br />
 How to play the game?<br />
 Please download Visual Studio, Live Server Extension on Visual Studio, Git and GitHub Desktop on your pc. <br />
-Click code in green bar on the right side under minesweeper repo. Copy the repo url in HTTPS format. Go to your Visual Studio Code. Click GitHub Source Control and click clone the repo. Go to index.html file and right click on it. Then click open with live server in the menu. <br />
+Click code in green bar on the right side under minesweeper repo. Copy the repo url in HTTPS format. Go to your Visual Studio Code. Click GitHub Source Control and click clone the repo and paste the url there and click enter. Go to index.html file and right click on it. Then click open with live server in the menu. <br />
 PS: Open the live server in Google Chrome to see font-family accurate. <br />
 
 This is the start screen: <br />
