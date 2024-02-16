@@ -1,0 +1,129 @@
+/*
+  black: rgb(0, 23, 50); #001732;
+  orange: rgb(241, 117, 78); #f1754e;
+  bg-color: #f9e4c8;
+  bg-dark-color: rgb(203, 224, 221); #cbe0dd;
+  clicked-cell: #ffb085;
+  transparent red: rgba(241, 117, 78, 0.7);
+  cell-bomb: #aa2b1d;
+
+	font-family: "Orbitron", sans-serif;
+	font-family: "Rubik Glitch Pop", system-ui;
+*/
+
+/* # Generic */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 16px;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1;
+  color: rgb(0, 23, 50);
+  background-color: #f9e4c8;
+  text-align: center;
+}
+
+.game-container {
+  width: calc(480px + 4px);
+}
+
+/* # Game Panel */
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  /* font-weight: 700; */
+}
+
+/* # Game Grid */
+
+.game-board {
+  border: 2px solid rgb(0, 23, 50);
+  position: relative;
+}
+
+.grid {
+  height: calc((48px * 10) + 4px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  outline: 1px dashed black;
+}
+
+.cell-clicked {
+  background-color: #ffb085;
+  cursor: not-allowed;
+}
+
+.cell-bomb {
+  background-color: #aa2b1d;
+  background-image: url('./images/bomb.png');
+  background-size: contain;
+  cursor: not-allowed;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+}
+
+/* # Game over */
+
+.end-game-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(241, 117, 78, 0.7);
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.win {
+  background-color: rgb(232, 159, 113, 0.7); /*0.7 is for transparency */
+}
+
+.end-game-text {
+  font-size: 48px;
+  font-family: 'Rubik Glitch Pop', system-ui;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-size: 24px;
+  font-family: 'Orbitron', sans-serif;
+  padding: 4px 20px 8px 20px;
+  /* width: 50%; */
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid rgb(0, 23, 50);
+}
+
+.btn:hover {
+  background-color: rgb(237, 207, 169);
+}
+
+/* # Utilities */
+
+.hidden {
+  display: none;
+}
